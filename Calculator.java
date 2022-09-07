@@ -54,12 +54,18 @@ public class Calculator {
                 System.out.println("Enter Second Number");
                 num2=sc.nextInt();
                 if(num1>num2) {
-                    float div = num1 / num2;
+                    int div = num1 / num2;
+                    int rem;
+                    rem = num1 % num2;
                     System.out.println("Division of Two Number are : " + div);
+                    System.out.println("And Remainder  are : " + rem);
                     break;
                 } else {
                     int div = num2 / num1;
+                    int rem;
+                    rem = num2 % num1;
                     System.out.println("Division of Two Number are : " + div);
+                    System.out.println("And Remainder  are : " + rem);
                     break;
                 }
                 default:
