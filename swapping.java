@@ -1,16 +1,20 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class swapping {
     public static void main(String[] args) {
-        int number1 = 456;
-        int number2 = 657;
-        System.out.println("Number are number1= "+number1+"Number2= "+number2);
-        int temp;
-        temp = number1;
-        number1 = number2;
-        number2 = temp;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the First Number: ");
+        int number1 = sc.nextInt();
+        System.out.println("Enter the First Number: ");
+        int number2 = sc.nextInt();
+        System.out.println(" Entered Number are Number1= "+number1+" Number2= "+number2);
+        number1+=number2;
+        number2=number1-number2;
+        number1=number1-number2;
         System.out.println("Number after swapping are ");
-        System.out.println("number1= "+number1+"Number2= "+number2);
+        System.out.println("Number1= "+number1+" Number2= "+number2);
 
     }
 }
